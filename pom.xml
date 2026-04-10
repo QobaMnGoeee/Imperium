@@ -4,10 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>kz.anarchy</groupId>
-    <artifactId>ImperiumPlugin</artifactId>
-    <version>1.0.0</version>
+    <artifactId>AnarchyPvP</artifactId>
+    <version>1.1.0</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -17,37 +16,24 @@
     </properties>
 
     <repositories>
-        <!-- Spigot репозитория -->
         <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
             <snapshots><enabled>true</enabled></snapshots>
         </repository>
-        <!-- Vault репозитория -->
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
     </repositories>
 
     <dependencies>
-        <!-- Spigot API -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <version>1.21.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <!-- Vault API (экономика) -->
-        <dependency>
-            <groupId>com.github.MilkBowl</groupId>
-            <artifactId>VaultAPI</artifactId>
-            <version>1.7</version>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 
     <build>
+        <finalName>AnarchyPvP-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
