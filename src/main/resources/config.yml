@@ -1,1 +1,35 @@
+# ╔══════════════════════════════════╗
+# ║     AnarchyPvP  Конфигурация    ║
+# ╚══════════════════════════════════╝
 
+combat:
+  # Шайқастың ұзақтығы (секундпен)
+  duration: 30
+
+bossbar:
+  # BossBar-ды қосу/өшіру
+  enabled: true
+
+  # BossBar мәтіні
+  # Қолжетімді тегтер:
+  #   {opponent} - қарсыластың аты
+  #   {time}     - қалған уақыт (секунд)
+  text: "⚔ PvP: {opponent} | {time}с қалды"
+
+  # BossBar түсі: RED, YELLOW, GREEN, BLUE, PURPLE, PINK, WHITE
+  color: RED
+
+messages:
+  pvp-start: "§eСіз §f{opponent}§e ойыншысымен PvP бастадыңыз."
+  pvp-end: "§aСіз PvP режимінен шықтыңыз."
+  opponent-changed: "§e⚔ PvP қарсыласыңыз ауысты: §f{opponent}"
+  command-blocked: "§c✗ §ePvP режимінде команда қолдану мүмкін емес!"
+  portal-blocked: "§c✗ §ePvP режимінде портал қолдану мүмкін емес!"
+  teleport-blocked: "§c✗ §ePvP режимінде телепорт мүмкін емес!"
+  logout-broadcast: "§8[§cPvP§8] §f{player} §cPvP кезінде серверден шықты! §8(§f{killer} §8жеңді)"
+
+allowed-commands:
+  - /help
+  - /rules
+  - /discord
+  - /website

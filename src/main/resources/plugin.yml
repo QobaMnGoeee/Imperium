@@ -1,7 +1,9 @@
-name: ImperiumKz
+name: AnarchyPvP
 version: 1.0.0
-main: kz.anarchy.imperium.Main
+main: kz.anarchy.pvp.Main
 api-version: "1.21"
-description: Империя (Клан) жүйесі — by QobaMn
-authors: [ QobaMn ]
-softdepend: [ Vault ]
+description: Жартылай анархия сервері үшін PvP Combat Tag жүйесі
+authors: [ AnarchyKZ ]
+
+commands: {}
+permissions: {}
